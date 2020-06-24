@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    input {
+      padding: 5px;
+    }
+  </style>
+</head>
+<body>
+
+  <canvas id="canvas-gauge" width="600" height="300"></canvas>
+  
+  <div style="display: grid; grid-template-columns: auto 1fr; column-gap: 10px; row-gap: 10px;">
+    <label>Green achievement</label>
+    <input type="number" id="green-input" min="0" max="100" value="80" onchange="onChangeGreenInput(event)">
+
+    <label>Yellow achievement</label>
+    <input type="number" id="yellow-input" min="0" max="100" value="70" onchange="onChangeYellowInput(event)">
+
+    <label>Low value</label>
+    <input type="number" id="low-input" min="0" max="100" value="20" onchange="onChangeLowInput(event)">
+
+    <label>High value</label>
+    <input type="number" id="high-input" min="0" max="100" value="95" onchange="onChangeHighInput(event)">
+  </div>
+
+  <script src="./gauge.js"></script>
+  <script src="./index.js"></script>
+
+</body>
+</html>
